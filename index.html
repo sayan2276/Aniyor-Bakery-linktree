@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Aniyor Bakery</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+
+<style>
+
+/* ---------- FONT (Bukhari Script) ---------- */
+
+@font-face{
+font-family:"Bukhari";
+src:url("BukhariScript-Regular.woff2") format("woff2");
+font-weight:lighter;
+font-style:normal;
+}
+
+/* ---------- RESET ---------- */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+/* ---------- BODY ---------- */
+
+body{
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+font-family:'Poppins',sans-serif;
+overflow:hidden;
+}
+
+/* ---------- BACKGROUND IMAGE ---------- */
+
+body::before{
+content:"";
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background-image:url("checkerboard.webp");
+background-size:200px;
+background-repeat:repeat;
+z-index:-2;
+}
+
+/* ---------- COLOR OVERLAY ---------- */
+
+body::after{
+content:"";
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(35,74,76,0.45);
+z-index:-1;
+}
+
+/* ---------- CARD ---------- */
+
+.card{
+width:90%;
+max-width:380px;
+background:#f3f7ee;
+border:3px solid #234a4c;
+border-radius:28px;
+padding:45px 30px;
+text-align:center;
+box-shadow:0 15px 30px rgba(0,0,0,0.18);
+}
+
+/* ---------- LOGO PLACEHOLDER ---------- */
+
+.logo{
+width:120px;
+height:120px;
+border-radius:50%;
+border:4px solid #234a4c;
+margin:0 auto 25px auto;
+overflow:hidden;
+background:#f3f7ee;
+display:flex;
+align-items:center;
+justify-content:center;
+}
+
+.logo img{
+width:100%;
+height:100%;
+object-fit:cover;
+}
+
+/* ---------- BAKERY NAME ---------- */
+
+h1{
+font-family:'Great Vibes',cursive;
+font-size:44px;
+color:#234a4c;
+margin-bottom:35px;
+position:relative;
+}
+
+h1::after{
+content:"";
+width:140px;
+height:3px;
+background:#234a4c;
+display:block;
+margin:12px auto 0;
+}
+
+/* ---------- BUTTON LINKS ---------- */
+
+.links{
+display:flex;
+flex-direction:column;
+gap:20px;
+}
+
+.links a{
+text-decoration:none;
+background:#234a4c;
+color:#f3f7ee;
+padding:16px;
+border-radius:16px;
+
+font-family:"Bukhari", cursive;
+font-size:28px;
+font-weight:600;
+
+transition:all .25s ease;
+}
+
+.links a:hover{
+transform:scale(1.06);
+background:#2d5d5f;
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+<main class="card">
+
+<div class="logo">
+<img src="logo.webp" alt="Bakery Logo">
+</div>
+
+<h1>Aniyor Bakery</h1>
+
+<nav class="links">
+
+<a href="https://www.instagram.com/aniyor_bakery/?hl=en">Instagram</a>
+<a href="menu.html">Menu</a>
+<a href="https://maps.app.goo.gl/v4o4K4RuthToMcpV6">Location</a>
+<a href="https://l.instagram.com/?u=https%3A%2F%2Fwa.me%2Fqr%2FEX6HIXONS7YQJ1%3Futm_source%3Dig%26utm_medium%3Dsocial%26utm_content%3Dlink_in_bio%26fbclid%3DPAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnkp21ic1fo19DT0vPvbjZsqjW3xKHQFxf05S-hU8j7zzdW1nrIz6vjgy0LE4_aem_QjPxq0HZzmkNwMVH_rq_Ng&e=AT7L6i4B-OyuTMpE2oMuRBhtnei4nlOHsuuEL4zzObjbDoaUxtWwDfOI4F_EPOZM5AW-VyG0LWQr7tAfICfaCRYnwLl3Sc1IjGjm7p6pspnCevIHukYWbLzB6Q">WhatsApp</a>
+
+</nav>
+
+</main>
+
+</body>
+
+</html>

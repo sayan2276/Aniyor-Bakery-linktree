@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Aniyor Bakery Menu</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+background:#234a4c;
+color:#f3f7ee;
+font-family:'Poppins',sans-serif;
+padding:25px;
+}
+
+/* HEADER */
+
+header{
+text-align:center;
+margin-bottom:35px;
+}
+
+header h1{
+font-family:'Playfair Display',serif;
+font-size:36px;
+margin-bottom:8px;
+}
+
+header p{
+font-size:14px;
+opacity:.9;
+}
+
+/* GRID */
+
+.menu{
+display:grid;
+grid-template-columns:1fr;
+gap:28px;
+max-width:900px;
+margin:auto;
+}
+
+/* CATEGORY */
+
+.category h2{
+font-family:'Playfair Display',serif;
+font-size:22px;
+margin-bottom:12px;
+border-bottom:1px solid #f3f7ee;
+padding-bottom:6px;
+}
+
+/* MENU ITEM */
+
+.item{
+display:flex;
+justify-content:space-between;
+margin:6px 0;
+font-size:15px;
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+margin-top:40px;
+font-size:14px;
+opacity:.9;
+}
+
+/* DESKTOP */
+
+@media(min-width:700px){
+
+.menu{
+grid-template-columns:1fr 1fr;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+<h1>Aniyor Bakery Menu</h1>
+<p>Pure Veg • Freshly Made • Eggless Baking</p>
+</header>
+
+
+<section class="menu">
+
+<div class="category">
+<h2>Muffins & Cupcakes</h2>
+
+<div class="item"><span>Mini Muffin</span><span>₹10</span></div>
+<div class="item"><span>Mini Cupcakes</span><span>₹20</span></div>
+<div class="item"><span>Regular Cupcakes</span><span>₹50</span></div>
+<div class="item"><span>Plumcake Muffins</span><span>₹50</span></div>
+<div class="item"><span>Cake Tub</span><span>₹50</span></div>
+</div>
+
+
+<div class="category">
+<h2>Snacks & Starters</h2>
+
+<div class="item"><span>French Fries</span><span>₹80</span></div>
+<div class="item"><span>Sweet Corn Masala</span><span>₹100</span></div>
+<div class="item"><span>Peri Peri French Fries</span><span>₹100</span></div>
+<div class="item"><span>Crispy Corn</span><span>₹120</span></div>
+<div class="item"><span>Manchurian</span><span>₹120</span></div>
+<div class="item"><span>Paneer Bites</span><span>₹120</span></div>
+<div class="item"><span>Cheese Balls</span><span>₹180</span></div>
+</div>
+
+
+<div class="category">
+<h2>Beverages</h2>
+
+<div class="item"><span>Herbal Tea</span><span>₹15</span></div>
+<div class="item"><span>Mocktails</span><span>₹25</span></div>
+<div class="item"><span>Herbal Coffee</span><span>₹25</span></div>
+<div class="item"><span>Butterscotch Milk</span><span>₹40</span></div>
+<div class="item"><span>Chocolate Milk</span><span>₹50</span></div>
+<div class="item"><span>Beetroot Carrot Juice</span><span>₹80</span></div>
+</div>
+
+
+<div class="category">
+<h2>Sandwiches</h2>
+
+<div class="item"><span>Aloo Minty Sandwich</span><span>₹140</span></div>
+<div class="item"><span>Paneer Sandwich</span><span>₹160</span></div>
+<div class="item"><span>Cheesy Sandwich</span><span>₹160</span></div>
+</div>
+
+
+<div class="category">
+<h2>Puffs & Buns</h2>
+
+<div class="item"><span>Veg Puff</span><span>₹35</span></div>
+<div class="item"><span>Paneer Puff</span><span>₹40</span></div>
+<div class="item"><span>Cream Bun</span><span>₹60</span></div>
+<div class="item"><span>Masala Bun</span><span>₹100</span></div>
+<div class="item"><span>Korean Bun</span><span>₹120</span></div>
+</div>
+
+
+<div class="category">
+<h2>Waffles</h2>
+
+<div class="item"><span>Vanilla Waffle</span><span>₹120</span></div>
+<div class="item"><span>Chocolate Nutella Waffle</span><span>₹180</span></div>
+</div>
+
+
+<div class="category">
+<h2>Burgers</h2>
+
+<div class="item"><span>Classic Aloo Tikki Burger</span><span>₹100</span></div>
+<div class="item"><span>Cheese Tikki Burger</span><span>₹120</span></div>
+</div>
+
+
+<div class="category">
+<h2>Pasta</h2>
+
+<div class="item"><span>Red Sauce Pasta</span><span>₹140</span></div>
+<div class="item"><span>White Sauce Pasta</span><span>₹180</span></div>
+</div>
+
+
+<div class="category">
+<h2>Pizzas</h2>
+
+<div class="item"><span>Alfredo Pizza</span><span>₹180</span></div>
+<div class="item"><span>Cheese Melt Pizza</span><span>₹200</span></div>
+<div class="item"><span>Paneer Tikka Pizza</span><span>₹200</span></div>
+</div>
+
+
+<div class="category">
+<h2>Grills</h2>
+
+<div class="item"><span>Grilled Paneer Tikka</span><span>₹180</span></div>
+</div>
+
+</section>
+
+
+<footer>
+Pure Veg • Freshly Made • Eggless Baking
+</footer>
+
+</body>
+</html>
